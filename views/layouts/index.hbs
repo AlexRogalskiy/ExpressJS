@@ -1,0 +1,21 @@
+<head>
+    <title>{{title}}</title>
+    <link rel='stylesheet' href='/public/css/style.css'>
+    {{{block "stylesheets"}}}
+</head>
+
+<body>
+    {{{message}}}
+
+    <hr/>
+    post body
+    <hr/>
+
+    {{{block "scripts"}}}
+</body>
+
+
+
+{{#extend "stylesheets"}}
+<link rel="stylesheet" href="/public/css/index.css"/>
+{{/extend}}

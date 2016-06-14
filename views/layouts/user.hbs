@@ -1,0 +1,27 @@
+<!doctype html>
+
+<html>
+
+<head>
+  <title>{{title}}</title>
+
+  <link rel='stylesheet' href='/public/css/style.css'>
+
+  {{{block "stylesheets"}}}
+</head>
+
+<body>
+  first: {{{user.name.first}}}
+  <br />
+  last: {{{user.name.last}}}
+  <br />
+  window: {{user.window.name}}
+
+  <hr/>
+  post body
+  <hr/>
+
+  {{{block "scripts"}}}
+</body>
+
+</html>
